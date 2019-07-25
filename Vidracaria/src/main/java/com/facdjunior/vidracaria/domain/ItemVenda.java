@@ -15,24 +15,19 @@ import javax.persistence.ManyToOne;
  *
  * @author Francisco Junior 2019-07-24
  */
-
 @SuppressWarnings("serial")
 @Entity
-public class ItemVenda extends GenericDomain{
-    
+public class ItemVenda extends GenericDomain {
+
     @Column(nullable = false)
     private Short quantidade;
-    
+
     @Column(nullable = false, precision = 9, scale = 2)
     private BigDecimal precoParcial;
-    
+
     @ManyToOne
     @JoinColumn(nullable = false)
     private Produto produto;
-    
-    @ManyToOne
-    @JoinColumn(nullable = false)
-    private Funcionario funcionario;
 
     public Short getQuantidade() {
         return quantidade;
@@ -57,14 +52,4 @@ public class ItemVenda extends GenericDomain{
     public void setProduto(Produto produto) {
         this.produto = produto;
     }
-
-    public Funcionario getFuncionario() {
-        return funcionario;
-    }
-
-    public void setFuncionario(Funcionario funcionario) {
-        this.funcionario = funcionario;
-    }
-    
-    
 }
