@@ -29,7 +29,7 @@ public class VendaDAOTest {
         venda.setCliente(cliente);
         venda.setFuncionario(funcionario);
         venda.setHorario(new Date());
-        venda.setPrecoTotal(new BigDecimal("22.50"));
+        venda.setPrecoTotal(new BigDecimal("18.48"));
 
         VendaDAO vendaDAO = new VendaDAO();
         vendaDAO.salvar(venda);

@@ -20,10 +20,10 @@ public class ProdutoDAOTest {
         Fabricante fabricante = fabricanteDAO.buscar(new Long("1"));
 
         Produto produto = new Produto();
-        produto.setDescricao("Cataflan 25mg com 30 comprimidos");
+        produto.setDescricao("Cataflan 50mg com 10 comprimidos");
         produto.setFabricante(fabricante);
-        produto.setPreco(new BigDecimal("13.70"));
-        produto.setQuantidade(new Short("7"));
+        produto.setPreco(new BigDecimal("18.48"));
+        produto.setQuantidade(new Short("10"));
 
         ProdutoDAO produtoDAO = new ProdutoDAO();
         produtoDAO.salvar(produto);

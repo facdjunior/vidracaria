@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.facdjunior.vidracaria.dao;
 
 import com.facdjunior.vidracaria.domain.Pessoa;
@@ -22,7 +17,7 @@ public class UsuarioDAOTest {
     public void salvar() {
 
         PessoaDAO pessoaDAO = new PessoaDAO();
-        Pessoa pessoa = pessoaDAO.buscar(2L);
+        Pessoa pessoa = pessoaDAO.buscar(1L);
 
         Usuario usuario = new Usuario();
         usuario.setAtivo(true);

@@ -20,7 +20,7 @@ public class FuncionarioDAOTest {
     public void salvar() throws ParseException {
 
         PessoaDAO pessoaDAO = new PessoaDAO();
-        Pessoa pessoa = pessoaDAO.buscar(2L);
+        Pessoa pessoa = pessoaDAO.buscar(1L);
 
         Funcionario funcionario = new Funcionario();
         funcionario.setCarteiraTrabalho("31212");

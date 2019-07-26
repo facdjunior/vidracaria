@@ -10,6 +10,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 
 /**
  *
@@ -28,6 +29,10 @@ public class ItemVenda extends GenericDomain {
     @ManyToOne
     @JoinColumn(nullable = false)
     private Produto produto;
+    
+    @ManyToOne
+    @JoinColumn(nullable = false)
+    private Venda venda;
 
     public Short getQuantidade() {
         return quantidade;
@@ -52,4 +57,13 @@ public class ItemVenda extends GenericDomain {
     public void setProduto(Produto produto) {
         this.produto = produto;
     }
+
+    public Venda getVenda() {
+        return venda;
+    }
+
+    public void setVenda(Venda venda) {
+        this.venda = venda;
+    }
+    
 }

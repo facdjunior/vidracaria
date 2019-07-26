@@ -21,7 +21,7 @@
         <property name="show_sql">true</property>
 
         <!-- Cria as tabelas do banco de dados -->
-        <property name="hbm2ddl.auto">validate</property>
+        <property name="hibernate.hbm2ddl.auto">validate</property>
 		
         <!-- Mapeamento das entidades -->
         <mapping class="com.facdjunior.vidracaria.domain.Cidade"/>
@@ -34,6 +34,7 @@
         <mapping class="com.facdjunior.vidracaria.domain.Produto"/>
         <mapping class="com.facdjunior.vidracaria.domain.Usuario"/>
         <mapping class="com.facdjunior.vidracaria.domain.Venda"/>
+  
         
     </session-factory>
 </hibernate-configuration>

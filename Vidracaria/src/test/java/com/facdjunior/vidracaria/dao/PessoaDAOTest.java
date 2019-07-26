@@ -15,21 +15,22 @@ public class PessoaDAOTest {
     @Test
     @Ignore
     public void salvar() {
-        Long codigoCidade = 1L;
+        Long codigoCidade = 2L;
 
         CidadeDAO cidadeDAO = new CidadeDAO();
         Cidade cidade = cidadeDAO.buscar(codigoCidade);
 
         Pessoa pessoa = new Pessoa();
-        pessoa.setNome("Sara Lúcia Tereza Novaes");
-        pessoa.setCpf("025.830.651-30");
-        pessoa.setRg("46.876.131-7");
+        pessoa.setNome("Gabriel Yuri Sebastião Almada");
+        pessoa.setCpf("651.513.291-38");
+        pessoa.setRg("30.568.844-3");
         pessoa.setCelular("(63)99230-6498");
         pessoa.setTelefone("(63)3415-4201");
-        pessoa.setRua("Rua dos Candangos");
-        pessoa.setBairro("Jardim Paulista");
-        pessoa.setComplemento(" ");
-        pessoa.setNumero(new Short("816"));
+        pessoa.setRua("Quadra 206 Sul Alameda 13");
+        pessoa.setBairro("Plano Diretor Sul");
+        pessoa.setComplemento("77020-128");
+        pessoa.setEmail("gabrielyurisebastiaoalmada@bakerhughes.com");
+        pessoa.setNumero(new Short("272"));
         pessoa.setCidade(cidade);
 
         PessoaDAO pessoaDAO = new PessoaDAO();

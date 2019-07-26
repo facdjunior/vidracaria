@@ -15,8 +15,8 @@ public class EstadoDAOTest {
     @Ignore
     public void salvar() {
         Estado estado = new Estado();
-        estado.setNome("MINAS GERAIS");
-        estado.setSigla("MG");
+        estado.setNome("SÃO PAULO");
+        estado.setSigla("SP");
 
         EstadosDAO estadosDAO = new EstadosDAO();
         estadosDAO.salvar(estado);
@@ -67,7 +67,7 @@ public class EstadoDAOTest {
     @Test
     @Ignore
     public void editar(){
-        Long codigo = 4L;
+        Long codigo = 1L;
         
         EstadosDAO estadosDAO = new EstadosDAO();
         Estado estado = estadosDAO.buscar(codigo);
@@ -77,7 +77,8 @@ public class EstadoDAOTest {
         if (estado == null){
             System.out.println("Não há registro para com os dados informados!");
         }else{
-            estado.setSigla("MG");
+            estado.setSigla("TO");
+            estado.setNome("TOCANTINS");
             estadosDAO.editar(estado);
             System.out.println("Registro alterado com sucesso!");
         }

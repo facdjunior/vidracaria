@@ -17,20 +17,19 @@ public class CidadeDAOTest {
     public void salvar() {
 
         EstadosDAO estadosDAO = new EstadosDAO();
-        Estado estado = estadosDAO.buscar(1L);
+        Estado estado = estadosDAO.buscar(2L);
 
         if (estado == null) {
             System.out.println("Favor informa Estado valido!");
         } else {
             Cidade cidade = new Cidade();
-            cidade.setNome("Colinas do Tocantins");
+            cidade.setNome("Belo Horizonte");
             cidade.setEstado(estado);
 
             CidadeDAO cidadeDAO = new CidadeDAO();
             cidadeDAO.salvar(cidade);
             System.out.println("Registro gravado com Sucesso");
         }
-
     }
 
     @Test

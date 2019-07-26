@@ -15,7 +15,7 @@ public class FabricanteDAOTest {
     @Ignore
     public void salvar() {
         Fabricante fabricante = new Fabricante();
-        fabricante.setDescricao("NORTESYS");
+        fabricante.setDescricao("Novartis Biociências SA ");
 
         FabricanteDAO fabricanteDAO = new FabricanteDAO();
         fabricanteDAO.salvar(fabricante);
